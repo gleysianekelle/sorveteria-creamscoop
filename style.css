@@ -1,0 +1,138 @@
+:root {
+      --rosa: #e5a8b1;
+        --rosa-escuro: #d88b98;
+          --creme: #fff8dc;
+            --texto: #4a2c2a;
+            }
+
+            * {
+              margin: 0;
+                padding: 0;
+                  box-sizing: border-box;
+                    font-family: "Poppins", sans-serif;
+                    }
+
+                    body {
+                      background: var(--creme);
+                        color: var(--texto);
+                        }
+
+                        /* HERO */
+                        .hero {
+                          text-align: center;
+                            padding: 3rem 1rem;
+                              background: linear-gradient(135deg, #f8dedb, var(--rosa));
+                              }
+
+                              /* FILTROS */
+                              .filters {
+                                display: flex;
+                                  justify-content: center;
+                                    gap: 1rem;
+                                      padding: 1.5rem;
+                                      }
+
+                                      .filters button {
+                                        background: white;
+                                          border: 1px solid var(--rosa);
+                                            padding: 0.5rem 1rem;
+                                              border-radius: 20px;
+                                                cursor: pointer;
+                                                  transition: 0.3s;
+                                                  }
+
+                                                  .filters button:hover {
+                                                    background: var(--rosa);
+                                                      color: white;
+                                                      }
+
+                                                      /* CARRINHO */
+                                                      .cart {
+                                                        text-align: center;
+                                                          margin-bottom: 1rem;
+                                                          }
+
+                                                          .cart button {
+                                                            margin-left: 1rem;
+                                                              background: var(--rosa);
+                                                                border: none;
+                                                                  color: white;
+                                                                    padding: 0.4rem 1rem;
+                                                                      border-radius: 20px;
+                                                                        cursor: pointer;
+                                                                        }
+
+                                                                        /* GRID */
+                                                                        .grid {
+                                                                          display: grid;
+                                                                            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                                                                              gap: 1.5rem;
+                                                                                padding: 2rem;
+                                                                                }
+
+                                                                                /* CARD */
+                                                                                .card {
+                                                                                  background: white;
+                                                                                    border-radius: 18px;
+                                                                                      padding: 1.2rem;
+                                                                                        box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+                                                                                          transition: transform 0.3s, box-shadow 0.3s;
+                                                                                            cursor: pointer;
+                                                                                            }
+
+                                                                                            .card:hover {
+                                                                                              transform: translateY(-8px);
+                                                                                                box-shadow: 0 20px 30px rgba(0,0,0,0.12);
+                                                                                                }
+
+                                                                                                /* MODAL */
+                                                                                                .modal {
+                                                                                                  position: fixed;
+                                                                                                    inset: 0;
+                                                                                                      background: rgba(0,0,0,0.6);
+                                                                                                        display: flex;
+                                                                                                          align-items: center;
+                                                                                                            justify-content: center;
+                                                                                                              animation: fadeIn 0.4s ease;
+                                                                                                              }
+
+                                                                                                              .hidden {
+                                                                                                                display: none;
+                                                                                                                }
+
+                                                                                                                .modal-content {
+                                                                                                                  background: white;
+                                                                                                                    padding: 2rem;
+                                                                                                                      border-radius: 20px;
+                                                                                                                        width: 90%;
+                                                                                                                          max-width: 400px;
+                                                                                                                            text-align: center;
+                                                                                                                              animation: slideUp 0.4s ease;
+                                                                                                                              }
+
+                                                                                                                              .modal-content button {
+                                                                                                                                margin-top: 1rem;
+                                                                                                                                  background: var(--rosa);
+                                                                                                                                    border: none;
+                                                                                                                                      padding: 0.6rem 1.2rem;
+                                                                                                                                        color: white;
+                                                                                                                                          border-radius: 20px;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                            }
+
+                                                                                                                                            #close-modal {
+                                                                                                                                              float: right;
+                                                                                                                                                font-size: 1.5rem;
+                                                                                                                                                  cursor: pointer;
+                                                                                                                                                  }
+
+                                                                                                                                                  @keyframes fadeIn {
+                                                                                                                                                    from { opacity: 0 }
+                                                                                                                                                      to { opacity: 1 }
+                                                                                                                                                      }
+
+                                                                                                                                                      @keyframes slideUp {
+                                                                                                                                                        from { transform: translateY(30px); opacity: 0 }
+                                                                                                                                                          to { transform: translateY(0); opacity: 1 }
+                                                                                                                                                          }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cream Scoop 🍨</title>
+        <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+
+        <header class="hero">
+          <h1>Cream Scoop</h1>
+            <p>Sorvetes artesanais, feitos com carinho e estética 💖</p>
+            </header>
+
+            <section class="filters">
+              <button data-filter="todos">Todos</button>
+                <button data-filter="artesanal">Artesanais</button>
+                  <button data-filter="gourmet">Gourmet</button>
+                  </section>
+
+                  <section class="cart">
+                    🛒 Carrinho: <span id="cart-count">0</span>
+                      <button id="checkout-btn">Finalizar pedido</button>
+                      </section>
+
+                      <main>
+                        <section id="sabores-container" class="grid"></section>
+                        </main>
+
+                        <!-- MODAL -->
+                        <div id="modal" class="modal hidden">
+                          <div class="modal-content">
+                              <span id="close-modal">&times;</span>
+                                  <h2 id="modal-title"></h2>
+                                      <p id="modal-desc"></p>
+                                          <button id="add-cart-modal">Adicionar ao carrinho</button>
+                                            </div>
+                                            </div>
+
+                                            <!-- CHECKOUT -->
+                                            <div id="checkout" class="modal hidden">
+                                              <div class="modal-content">
+                                                  <h2>Pedido confirmado! 🍨💖</h2>
+                                                      <p>Seu sorvete já está sendo preparado com amor.</p>
+                                                          <button id="close-checkout">Fechar</button>
+                                                            </div>
+                                                            </div>
+
+                                                            <script src="script.js"></script>
+                                                            </body>
+                                                            </html>

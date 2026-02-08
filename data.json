@@ -1,0 +1,23 @@
+{
+      "sabores": [
+          {
+                "id": 1,
+                      "nome": "Morango Cremoso",
+                            "tipo": "artesanal",
+                                  "descricao": "Morangos frescos, textura leve e delicada."
+                                      },
+                                          {
+                                                "id": 2,
+                                                      "nome": "Chocolate Belga",
+                                                            "tipo": "gourmet",
+                                                                  "descricao": "Cacau intenso, final marcante e elegante."
+                                                                      },
+                                                                          {
+                                                                                "id": 3,
+                                                                                      "nome": "Baunilha Clássica",
+                                                                                            "tipo": "artesanal",
+                                                                                                  "descricao": "Suave, aveludado e atemporal."
+                                                                                                      }
+                                                                                                        ]
+                                                                                                        }
+}
